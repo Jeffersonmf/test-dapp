@@ -895,11 +895,12 @@ const initialize = async () => {
     }
   };
 
-  /**
+  /* *****************************************************************************************************************************************************************************
    * Personal Sign
-   */
+   ****************************************************************************************************************************************************************************** */
   personalSign.onclick = async () => {
-    const exampleMessage = 'Example `personal_sign` message';
+    const exampleMessage = `Welcome to Quiver!\n\nClick to sign in and aceept the quiver terms of service: https://quiver.com/tos\n\nBy signing this request you agree that you are not a US or brazilian citizen.\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address: 0x4894db4ca4c2382129f42e1fb99efe4cfc150754\n\nNonce: 158c8d4f-838a-43e3-8746-70f4d1077806`;
+
     try {
       const from = accounts[0];
       const msg = `0x${Buffer.from(exampleMessage, 'utf8').toString('hex')}`;
@@ -915,11 +916,12 @@ const initialize = async () => {
     }
   };
 
-  /**
+  /* *******************************************************************************************************************************************************************************
    * Personal Sign Verify
-   */
+   ****************************************************************************************************************************************************************************** */
   personalSignVerify.onclick = async () => {
-    const exampleMessage = 'Example `personal_sign` message';
+    const exampleMessage = `Welcome to Quiver!\n\nClick to sign in and aceept the quiver terms of service: https://quiver.com/tos\n\nBy signing this request you agree that you are not a US or brazilian citizen.\n\nThis request will not trigger a blockchain transaction or cost any gas fees.\n\nWallet address: 0x4894db4ca4c2382129f42e1fb99efe4cfc150754\n\nNonce: 158c8d4f-838a-43e3-8746-70f4d1077806`;
+
     try {
       const from = accounts[0];
       const msg = `0x${Buffer.from(exampleMessage, 'utf8').toString('hex')}`;
